@@ -1,4 +1,4 @@
-# inventory-management
+# Inventory-management-system
 **Overview**
 This repository contains an Inventory Management System implemented in C. The program allows users to manage a list of products, including adding, updating, deleting, searching, and sorting products. It also features user authentication (sign-in and sign-up) and advanced functionalities like restocking low-quantity items and recording sales. The system uses file handling to store user credentials and inventory data persistently.
 
