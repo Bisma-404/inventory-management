@@ -1,46 +1,96 @@
-# Inventory-management-system
-**Overview**
-This repository contains an Inventory Management System implemented in C. The program allows users to manage a list of products, including adding, updating, deleting, searching, and sorting products. It also features user authentication (sign-in and sign-up) and advanced functionalities like restocking low-quantity items and recording sales. The system uses file handling to store user credentials and inventory data persistently.
+# Inventory-Management-System  
 
-**Features**
-***User Authentication:***
+A **C-based console Inventory Management System** designed to manage products, record sales, restock low-quantity items, and maintain persistent user-specific data.  
 
-Sign up to create a new account.
+## Overview  
 
-Sign in to access your inventory.
+This application simplifies product management through a **menu-driven console interface** with **user authentication**, ensuring secure access. It uses **file handling** for persistent data storage, making it lightweight yet functional. The program also enhances user experience with **colored text** and **ASCII art** for a visually appealing introduction.  
 
-***Inventory Management:***
+## Key Features  
 
-Add Product: Add new products with details like ID, name, price, quantity, and items sold.
+### 1. User Authentication  
+- **Sign Up**: Create a new account and store credentials securely in `users.txt`.  
+- **Sign In**: Authenticate to access a personalized inventory.  
+- **User-Specific Data**: Each user has a separate inventory file (`<username>_inventory.txt`) to keep data isolated.  
 
-Display Products: View all products in a tabular format.
+### 2. Inventory Management  
+- **Add Product**: Add products with details like **ID**, **Name**, **Price**, **Quantity**, and **Items Sold**.  
+- **Display Products**: View all products in a **tabular format** for better readability.  
+- **Delete Product**: Remove a product by specifying its **ID**.  
+- **Update Product**: Modify product details such as **name, price, or quantity**.  
+- **Search Product**: Quickly search for a product by its **ID**.  
+- **Product Sold**: Record sales and automatically update inventory quantities and items sold.  
+- **Sorting**: Sort products dynamically by **price**, **quantity**, or **name**.  
+- **Restock Alerts**: Identify low-stock products (**quantity < 10**) for restocking decisions.  
 
-Delete Product: Remove a product by specifying its ID.
+### 3. File Handling  
+- **Persistent User Data**: Credentials are stored in `users.txt`.  
+- **Inventory Files**: Each user’s inventory is stored separately as `<username>_inventory.txt`.  
+- **Data Safety**: Inventory changes are saved immediately to prevent data loss.  
 
-Update Product: Modify product details (name, price, or quantity).
+### 4. Error Handling  
+- **Input Validation**: Ensures only valid product details and credentials are entered.  
+- **Clear Messages**: Displays meaningful error or success messages.  
+- **Safe Operations**: Prevents accidental deletion or invalid updates.  
 
-Search Product: Search for a product by its ID.
+### 5. User-Friendly Console Interface  
+- **Colored Text**: Highlights important information, errors, and success messages.  
+- **ASCII Art**: Displays at program start for a **visually engaging introduction**.  
 
-Product Sold: Record sales and update inventory.
+## Why It Stands Out  
 
-Sorting: Sort products by price, quantity, or name.
+- ✅ **Lightweight**: Runs on any OS with a C compiler  
+- ✅ **Secure & Personalized**: Separate inventory files for each user  
+- ✅ **Feature-Rich**: From CRUD operations to sorting and restocking alerts  
+- ✅ **Beginner-Friendly**: A great example of file handling and modular programming in C  
 
-Restock: Identify products with low stock (quantity < 10) for restocking.
+## System Architecture  
 
-***File Handling:***
+### Main Components  
+- **Authentication Module**: Manages sign-up/sign-in and credential validation  
+- **Inventory Module**: Handles all CRUD operations, sorting, and restocking  
+- **Sales Recorder**: Updates inventory data after product sales  
 
-User data is stored in users.txt.
+### Data Handling  
+- `.txt` files store user credentials and inventories  
+- User-specific inventory files ensure isolated and secure data  
+- Immediate save mechanism prevents data loss  
 
-Each user has a separate inventory file named <username>_inventory.txt.
+## Usage  
 
-***Error Handling:***
+### Authentication Flow  
+1. Launch the program → Choose **Sign Up** (new user) or **Sign In** (existing user)  
+2. Enter credentials to gain access to your personalized inventory  
 
-Input validation ensures users enter valid data.
+### Inventory Flow  
+1. Access the **Inventory Menu** after logging in  
+2. Perform any operation:  
+   - Add new products  
+   - Display, sort, or search products  
+   - Update or delete products  
+   - Record sales and auto-update stock  
+   - Restock low-quantity items  
 
-Clear error messages are displayed for invalid inputs or operations.
+## Requirements  
 
-***User Interface:***
+- **C Compiler** (GCC, Clang, or any standard C compiler)  
+- Compatible with **Windows, macOS, and Linux**  
+- No external libraries required  
 
-Colored text enhances readability and provides visual feedback.
+## Future Improvements  
 
-ASCII art is displayed at the start of the program for a visually appealing introduction.
+- Encrypt stored credentials for better security  
+- Add CSV export/import support  
+- Implement **multi-user simultaneous access**  
+- Advanced reporting (e.g., monthly sales summaries)  
+- Optionally build a graphical interface  
+
+## License  
+
+This project is for **academic and educational use**. Please give credit if reused or modified.  
+
+## Developed By  
+
+**BISMA SHAHID**  
+Department of Software Engineering  
+FAST NUCES KHI  
