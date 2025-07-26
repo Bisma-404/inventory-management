@@ -2,9 +2,18 @@
 
 A **C-based console Inventory Management System** designed to manage products, record sales, restock low-quantity items, and maintain persistent user-specific data.  
 
+---
+
+## Preview  
+![Inventory Preview](image/Inventory_GUI.png)  
+
+---
+
 ## Overview  
 
 This application simplifies product management through a **menu-driven console interface** with **user authentication**, ensuring secure access. It uses **file handling** for persistent data storage, making it lightweight yet functional. The program also enhances user experience with **colored text** and **ASCII art** for a visually appealing introduction.  
+
+---
 
 ## Key Features  
 
@@ -35,14 +44,18 @@ This application simplifies product management through a **menu-driven console i
 
 ### 5. User-Friendly Console Interface  
 - **Colored Text**: Highlights important information, errors, and success messages.  
-- **ASCII Art**: Displays at program start for a **visually engaging introduction**.  
+- **ASCII Art**: Displays at program start for a **visually engaging introduction**.
+
+---
 
 ## Why It Stands Out  
 
 - ✅ **Lightweight**: Runs on any OS with a C compiler  
 - ✅ **Secure & Personalized**: Separate inventory files for each user  
 - ✅ **Feature-Rich**: From CRUD operations to sorting and restocking alerts  
-- ✅ **Beginner-Friendly**: A great example of file handling and modular programming in C  
+- ✅ **Beginner-Friendly**: A great example of file handling and modular programming in C
+
+---
 
 ## System Architecture  
 
@@ -54,7 +67,9 @@ This application simplifies product management through a **menu-driven console i
 ### Data Handling  
 - `.txt` files store user credentials and inventories  
 - User-specific inventory files ensure isolated and secure data  
-- Immediate save mechanism prevents data loss  
+- Immediate save mechanism prevents data loss
+
+---
 
 ## Usage  
 
@@ -69,13 +84,17 @@ This application simplifies product management through a **menu-driven console i
    - Display, sort, or search products  
    - Update or delete products  
    - Record sales and auto-update stock  
-   - Restock low-quantity items  
+   - Restock low-quantity items
+
+---
 
 ## Requirements  
 
 - **C Compiler** (GCC, Clang, or any standard C compiler)  
 - Compatible with **Windows, macOS, and Linux**  
-- No external libraries required  
+- No external libraries required
+
+---
 
 ## Future Improvements  
 
@@ -83,7 +102,9 @@ This application simplifies product management through a **menu-driven console i
 - Add CSV export/import support  
 - Implement **multi-user simultaneous access**  
 - Advanced reporting (e.g., monthly sales summaries)  
-- Optionally build a graphical interface  
+- Optionally build a graphical interface
+
+---
 
 ## License  
 
